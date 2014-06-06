@@ -4,6 +4,7 @@ var requestify = require('requestify');
 var sentences = [
 " Test", 
 " Test"];
+var length_sentences = sentences.length +1;
 
 var bot = new ntwitter(auth);
 var callback = function handleError(error) {
@@ -22,7 +23,7 @@ function startStreaming() {
         console.log('Listening for Tweets...');
         stream.on('data', function(tweet) {
             if (tweet.text.match('word')) {
-              var id_sentence = getRandomArbitrary(0, 8);
+              var id_sentence = getRandomArbitrary(0, length_sentences);
               console.log(id_sentence);
               console.log(sentences[id_sentence]);
               bot.updateStatus('@' + tweet.user.screen_name + sentences[id_sentence] ,
