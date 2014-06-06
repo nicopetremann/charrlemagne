@@ -3,6 +3,8 @@ Charrlemagne
 
 Charrlemagne is a super annoying Twitter bot using **STREAMING API**
 
+You need Node.js to play with it and NPM.
+
 ## Installation
 
 	npm install
