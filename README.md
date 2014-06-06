@@ -51,4 +51,6 @@ Choose your answers
   	" ANSWERN++"
   	];
 
+Launch the app in terminal with `foreman start`
+
 Let's play with it !
